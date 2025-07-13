@@ -1,0 +1,14 @@
+-- Insert sample projects
+INSERT INTO projects (title, description, industry, technology_stack, image_url, featured) VALUES
+('HealthFlow EHR System', 'Comprehensive electronic health records system serving 50+ hospitals with real-time patient data management and HIPAA compliance.', 'healthcare', ARRAY['React', 'Node.js', 'PostgreSQL', 'AWS'], '/placeholder.svg?height=400&width=600', true),
+('TradePro Analytics Platform', 'High-frequency trading platform processing 1M+ transactions per second with advanced risk management and real-time analytics.', 'trading', ARRAY['Python', 'Redis', 'Kafka', 'Docker'], '/placeholder.svg?height=400&width=600', true),
+('ClaimSmart Automation', 'AI-powered insurance claims processing system reducing manual work by 80% and improving accuracy to 99.9%.', 'insurance', ARRAY['Python', 'TensorFlow', 'PostgreSQL', 'Azure'], '/placeholder.svg?height=400&width=600', true),
+('PortfolioMax Dashboard', 'Investment portfolio management platform managing $50B+ in assets with real-time performance tracking.', 'investment', ARRAY['Vue.js', 'Python', 'MongoDB', 'AWS'], '/placeholder.svg?height=400&width=600', true),
+('MedDevice Connect', 'IoT platform connecting 10,000+ medical devices with real-time monitoring and predictive maintenance.', 'healthcare', ARRAY['IoT', 'Node.js', 'InfluxDB', 'Kubernetes'], '/placeholder.svg?height=400&width=600', false),
+('RiskGuard Analytics', 'Advanced risk assessment platform for financial institutions with machine learning-powered fraud detection.', 'finance', ARRAY['Python', 'Scikit-learn', 'PostgreSQL', 'Docker'], '/placeholder.svg?height=400&width=600', false);
+
+-- Insert sample blog posts
+INSERT INTO blog_posts (title, slug, excerpt, content, featured_image, tags, published, published_at) VALUES
+('The Future of Healthcare Technology', 'future-healthcare-technology', 'Exploring how AI and machine learning are transforming patient care and medical diagnostics.', 'Healthcare technology is evolving at an unprecedented pace...', '/placeholder.svg?height=300&width=500', ARRAY['healthcare', 'ai', 'technology'], true, NOW() - INTERVAL '7 days'),
+('Building Scalable Trading Systems', 'scalable-trading-systems', 'Best practices for developing high-performance trading platforms that can handle millions of transactions.', 'In the world of high-frequency trading, performance is everything...', '/placeholder.svg?height=300&width=500', ARRAY['trading', 'performance', 'architecture'], true, NOW() - INTERVAL '14 days'),
+('Insurance Industry Digital Transformation', 'insurance-digital-transformation', 'How automation and AI are revolutionizing claims processing and customer service in insurance.', 'The insurance industry is undergoing a major digital transformation...', '/placeholder.svg?height=300&width=500', ARRAY['insurance', 'automation', 'digital-transformation'], true, NOW() - INTERVAL '21 days');
